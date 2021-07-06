@@ -20,9 +20,9 @@ $(document).ready(function() {
 	};
 
 	var boule=function(n) {
-		var d=Math.floor((n-1)/10);
-		var u=n-(d*10);
-		var gauche=(u<=unites[d]) ? (rBoule*32)-2 : (rBoule*20)+10;
+		var d=Math.floor((n-1)/9);
+		var u=n-(d*9);
+		var gauche=(u<=unites[d]) ? (rBoule*32)-10 : (rBoule*20)+10;
 		var xLigne=(u>5) ? gauche-(8+(u*2*rBoule)-rBoule) : gauche-((u*2*rBoule)-rBoule);
 		var yLigne=(d>4) ? 5+(d+1)*eltBoulier.height()/11:-5+(d+1)*eltBoulier.height()/11;
 		var couleurs=new Array(new Array('green','blue'),new Array('orange','red'));
@@ -55,7 +55,7 @@ $(document).ready(function() {
 			ctxBoulier.closePath();
 			ctxBoulier.stroke();
 		}
-		for (var i=0;i<100;i++) {
+		for (var i=0;i<90;i++) {
 			boule(i+1);
 		}
 		ctxBoulier.save();
@@ -63,7 +63,6 @@ $(document).ready(function() {
 		ctxBoulier.textAlign='right';
 		ctxBoulier.textBaseline='bottom';
 		ctxBoulier.fillStyle=ctxBoulier.strokeStyle;
-		ctxBoulier.fillText('www.micetf.fr',eltBoulier.width()-5,eltBoulier.height()-5);
 		ctxBoulier.restore();
 		$('#combien').text(combien());
 		
@@ -169,5 +168,4 @@ $(document).ready(function() {
 	
 	dessineBoulier();
 
-	$('.contact').contact();
 });
