@@ -1,0 +1,273 @@
+body{
+	margin: 0px 0px 0px 0px;
+	background:url(../img/struct/fondEntete.png) bottom left repeat-x;
+	
+}
+/* ============= Accessibility menu ============= */
+ul#accessibility {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:50px;
+	width:auto;
+	z-index:90;
+	font-size:7pt;
+	top:3px;
+	opacity: 0.2;
+	filter:Alpha(opacity=20); 
+	color:white;
+}
+ul#accessibility:hover{
+	opacity: 0.7;
+	filter:Alpha(opacity=70); 
+}
+ul#accessibility li{
+	float: left;
+	margin-left:10px;
+}
+ul#accessibility a{
+	color:white;
+	text-decoration: none;
+}
+ul#accessibility a:hover{
+	text-decoration: none;
+}
+noscript{
+	font-size: 0.8em;
+	font-style: italic;
+}
+#tplFra {
+	height:110px;
+	width:100%;
+	background:url(../img/struct/entete.png) no-repeat;
+}
+#tplTop {
+	position: absolute;
+	width:100%;
+	top:0px;
+	right:0px;
+	font-size:16px;
+	background:url(../img/struct/logomodu.png) right no-repeat;	
+}
+#titleRoot{
+	height:110px;
+	font-size: 18px;
+	text-align: center;
+	/*background:url(../img/struct/entete.png) no-repeat;*/
+	color:black;
+	font-weight:bold;
+	width:100%;
+
+}
+
+#titleRoot span{
+	position:absolute;
+	top:85px;	
+	height: 12px;
+	display:block;
+	width:100%;
+	text-align: center;
+}
+
+#tplMnu {
+	position: absolute;
+	background-color: white;
+	width:230px;
+	top:110px;
+	left:0px;
+	bottom:28px;
+	text-align: left;
+}
+
+#tplMnuOpenedCo{
+	position: absolute;
+	width: 12px;
+	height: 27px;
+	left:230px;
+	top:50px;
+}
+
+#tplMnuOpenedCo span{
+	display: none
+}
+
+#mnuBtnCollapse{
+	background: url(../img/mnu/collapse.png) no-repeat;
+	position: absolute;
+	width: 15px;
+	height: 27px;
+}
+
+#mnuBtnCollapse:hover{
+	background-image: url(../img/mnu/collapseOver.png);
+}
+
+div.mnuOpn {
+    top: 10px;
+    height: 27px;
+    position: absolute;
+    right: -17px;
+    width: 15px;
+}
+
+a.mnuOpnBtn {
+    height: 27px;
+    position: absolute;
+    width: 15px;
+}
+
+a.mnuOpnBtn .btnImg {
+    border: 0 none;
+}
+
+#tplIco{
+	position: absolute;
+	text-align: center;
+	width:240px;
+	bottom:0px;
+	height:200px;
+	overflow: hidden;
+}
+div.decoSynth{
+	background-image: url(../img/deco/boiteOutils.png);
+	background-repeat: no-repeat;
+}
+#tplIco img{
+	position: absolute;
+	left:0px;
+	bottom:0px;
+}
+div.mnuCls{
+	position: absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	width: 15px;
+}
+div.tplMainMnu_open div.mnuCls{
+	display:none;
+}
+div.tplMainMnu_closed #tplMnu{
+	display:none;
+}
+a.mnuClsBtn{
+	position: absolute;
+	width: 15px;
+	height: 27px;
+	top:140px;
+}
+a.mnuClsBtn .btnImg{
+	border:0px;
+}
+
+a.mnuClsBtn .btnLbl{
+	color:black:
+}
+
+
+#tplCo {
+	overflow: auto;
+	position:absolute;
+	top:125px;
+	left:242px;
+	right:0px;
+	bottom:28px;
+	padding-right:90px;
+	overflow-x:hidden
+}
+
+/* with overflow=auto, margin-bottom does not work correctly for some browsers */
+/* using this method as a workaround : http://www.brunildo.org/test/overscrollbackV.html */
+#tplCoSpacer {
+	height:20px;
+}
+
+#tplBtm {
+	height:28px;
+	color: white;
+	text-align: right;
+}
+#tplBtmLeft{
+}
+#tplBtmIn {
+	background: url(../img/struct/ours.png) no-repeat center left;
+	position: absolute;
+	display: block;
+	right: 3px;
+	left: 3px;
+	bottom:3px;
+	height:30px;
+}
+#linkSp{
+	text-decoration: none;
+	margin: 0px;
+}
+#linkSp img{
+	border-width:0px;
+	vertical-align: middle;
+}
+#tplBtmIn a {
+	color: gray;
+}
+#tplBtmIn a:hover {
+	color: lightgray;
+}
+
+ul.mnuMode{
+	margin:0px;
+	padding:0px
+}
+
+.tplMainMnu_closed #tplCo{
+	left:20px
+}
+
+/* === SMALL & TOUCH screens ================================================ */
+/* ipad */
+@media only screen and (max-device-width: 1024px){
+	body{
+		-webkit-text-size-adjust:none;
+	}
+}
+
+div.tplFra_small ul#accessibility{
+	display:none;
+}
+
+div.tplFra_small #tplIco{
+	display:none;
+}
+div.tplFra_small div.mnuBlock{
+	display:none;
+}
+div.tplFra_small div.mnuFra{
+	bottom:0;
+	border-right:3px solid #7C97CA;
+	background-color:white;
+}
+
+div.tplFra_touch .scroller{
+	padding-top:1px;
+	padding-bottom:1px;
+	width:100%;
+}
+
+/* TABLET - portrait */
+@media only screen and (orientation:portrait){
+	div.tplFra_small .tplMainMnu_open #tplCo {
+		left: 15px;
+	}
+	div.tplFra_small #tplMnu{
+		z-index: 10;
+	}
+}
+
+/* PHONE - portrait */
+/*@media screen and (max-device-width: 480px){*/
+@media only screen and (max-width: 480px){
+}
+
+

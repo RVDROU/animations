@@ -1,0 +1,9 @@
+.choiceList_in input {
+	margin-top: 0;
+}
+
+/* sur les IEs, si on place le span qui porte l'intitulé du bouton, alors l'image n'est plus cliquable. Or on ne peut pas les laisser à côté, donc autant les enlever */
+
+.playBtnSel .btnLbl, .playBtn .btnLbl, .toolsBtnSel .btnLbl, .toolsBtn .btnLbl, .homeBtnSel .btnLbl, .homeBtn .btnLbl{
+	display:none
+}

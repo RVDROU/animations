@@ -1,0 +1,113 @@
+html{
+	height:100%
+}
+
+
+#evalPlayerCo{
+	padding: 0px 32px 100px 32px;
+}
+#evalPlayerBar {
+	position: fixed;
+	bottom:0px;
+	right:0px;
+	background: url(../img/quiz/fondEvalPrevSuiv.png) top right no-repeat;
+	width:30px;
+	height:100px;
+	padding-right:2px;
+}
+#evalPlayerBarFra1 {
+}
+#evalPlayerBarFra2 {
+}
+#evalPlayerBarFra3{
+}
+#evalPlayerPrint {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width: 144px;
+	height: 100px;
+}
+.evalCounter{
+	position:absolute;
+	bottom:80px;
+	background: url(../img/quiz/fondEvalCounter.png) no-repeat;
+	background-position: -1px;
+	width: 28px;
+	height: 28px;
+}
+.evalCounterSeen{
+	color: #177FC4;
+	font-weight: bold;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.evalCounterOver{
+	display: none;
+}
+.evalCounterTotal{
+	color: #00767E;
+	font-weight: bold;
+	position:absolute;
+	bottom:0px;
+	right:0px;
+}
+
+.nextEval,
+.prevEval{
+	width: 35px;
+	height: 40px;
+	text-decoration: none;
+	display: block;
+}
+
+.printEval{
+	width: 144px;
+	height: 100px;
+}
+
+.nextEval{
+	background: url(../img/quiz/evalNext.png) top right no-repeat;
+	position:absolute;
+	bottom:40px;
+	right:2px
+}
+a.nextEval:hover{
+	background: url(../img/quiz/evalNextOver.png) top right no-repeat;
+}
+.prevEval{
+	background: url(../img/quiz/evalPrev.png) top right no-repeat;
+	position:absolute;
+	bottom:2px;
+	right:2px
+}
+a.prevEval:hover{
+	background: url(../img/quiz/evalPrevOver.png) top right no-repeat;
+}
+.printEval{
+	background: url(../img/quiz/evalPrint.png) top right no-repeat;
+	position:absolute;
+	bottom:0px;
+	left:0px
+}
+a.printEval:hover{
+	background: url(../img/quiz/evalPrintOver.png) top right no-repeat;
+}
+.nextEval span, .prevEval span, .printEval span{
+	display: none;
+}
+
+/* === SMALL & TOUCH screens ================================================ */
+div.tplFra_touch{
+	position: absolute;
+	height:100%;
+	width:100%;
+}
+div.tplFra_touch #tplCo{
+	position: absolute;
+	height:100%;
+	left:40px;
+	right:0;
+}
+

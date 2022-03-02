@@ -1,0 +1,128 @@
+body{
+	height: auto;
+	background: #333333;
+}
+#tplFra {
+	position: absolute;
+	text-align: left;
+	top:0px;
+	left:0px;
+	height:560px;
+	width:auto;
+	background-color: White;
+	background-repeat: repeat-x;
+}
+
+.playBtnSel, .playBtn, .toolsBtnSel, .toolsBtn, .homeBtnSel, .homeBtn{
+	cursor:hand;
+	cursor:pointer;
+}
+
+.playBtnSel img, .playBtn img, .toolsBtnSel img, .toolsBtn img, .homeBtnSel img, .homeBtn img{
+	cursor:default;
+	cursor:default
+}
+
+#tplMnu {
+	height:460px;
+	overflow: auto;
+	overflow-x:hidden 
+}
+#mnuScroll{
+	height:263px;
+	overflow: hidden;
+}
+#tplIco{
+	z-index: -1;
+	top:260px
+}
+#tplCo {
+	height:435px;
+	position: static;
+	padding-left: 240px;
+
+}
+#tplTop{
+	position: static;
+}
+.blocks_ti{
+	width:auto
+}
+
+.nextBtn, .prevBtn{
+	margin-left: -2px;
+}
+.mnuBlock{
+	height:273px;
+}
+#mnuFrmUp,
+#mnuFrmDown{
+	font-size:1px;
+}
+
+#mnuFrmDown{
+	bottom: 165px
+}
+
+#mnuFrmUpCenter,
+#mnuFrmDownCenter {
+	width:225px;
+	top:0px;
+}
+#mnuFrmUpRight,
+#mnuFrmDownRight{
+	right:-1px;
+}
+#mnuBtnCollapse{
+	display: none;
+}
+
+.menuElt_entry, .toolsElt_entry{
+	display: block;
+	height: 25px;
+}
+.sw_child_navList a{
+	height: 45px;
+	border: 1px sold red
+}
+/*a.childL.childElt_entry.childOwner_divTree.folder{
+	background: url(../img/menu/div_child.gif) no-repeat top left;
+}*/
+li.menuSel_no.menuElt_child a.menuSel_no.menuL.menuElt_entry.menuOwner_divTree.folder {
+	background: url(../img/deco/closedMnu.gif) no-repeat top left; 
+}
+li.menuSel_no.menuElt_child a.menuSel_no.menuL.menuElt_entry.menuOwner_subdivTree.folder{
+ 	background: url(../img/deco/closedMnu.gif) no-repeat top left;
+}
+li.menuSel_no.menuElt_child a.menuSel_no.menuL.menuElt_entry.menuOwner_genStage.folder{
+ 	background: url(../img/deco/closedMnu.gif) no-repeat top left;
+}
+span.menuSel_yes.menuB.menuElt_entry.menuOwner_divTree.folder {
+	background: url(../img/deco/openMnu.gif) no-repeat top left;
+}
+
+li.menuElt_child ul{
+	list-style: none;
+}
+
+.question{
+	padding-bottom:20px;
+}
+.divQuiz{
+	position: absolute;
+	width: 590px;
+	height: 520px;
+}
+
+div.op_practUcQ_hint_co{
+	background: url(../img/quiz/practHint.png) no-repeat 10px 10px;
+	padding-left: 45px;
+}
+div.op_practUcQ_sol_co{
+	background: url(../img/quiz/practSol2.png) no-repeat 10px 10px;
+	padding-left: 45px;
+}
+
+.div.scImgGalFra{
+	border: 1px solid gray
+}

@@ -1,0 +1,239 @@
+body{
+	margin: 0px 0px 0px 0px;
+	background:url(../img/struct/fondEntete.png) bottom left repeat-x;	
+}
+/* ============= Accessibility menu ============= */
+ul#accessibility {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:50px;
+	width:auto;
+	z-index:90;
+	font-size:7pt;
+	top:3px;
+	opacity: 0.2;
+	filter:Alpha(opacity=20); 
+	color:white;
+}
+ul#accessibility:hover{
+	opacity: 0.7;
+	filter:Alpha(opacity=70); 
+}
+ul#accessibility li{
+	float: left;
+	margin-left:10px;
+}
+ul#accessibility a{
+	color:white;
+	text-decoration: none;
+}
+ul#accessibility a:hover{
+	text-decoration: none;
+}
+noscript{
+	font-size: 0.8em;
+	font-style: italic;
+}
+#tplFra {
+	background:url(../img/struct/entete.png) no-repeat;	
+	height:110px;
+	width:100%;
+}
+#tplTop {
+	position: absolute;
+	width:100%;
+	top:0px;
+	left:0px;
+	color: white;
+	text-align: left;
+	font-size:16px;
+	background:url(../img/struct/logomodu.png) right no-repeat;
+	height:110px;
+}
+#titleRoot{
+	height:110px;
+	font-size: 18px;
+	text-align: right;
+	/*background:url(../img/struct/entete.png) no-repeat;*/
+	color:black;
+	font-weight:bold;
+	display:block
+}
+
+#titleRoot span{
+	display:none
+}
+
+#tplCo {
+	overflow: auto;
+	position:absolute;
+	top:110px;
+	left:0px;
+	right:0px;
+	bottom:28px;
+}
+
+
+div.logoHomeDefault{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-image:url(../img/struct/fondHomeTop.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+div.logoHome{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+#mainTd{
+	padding: 0px;
+	
+}
+#main_ti{
+	font-weight: bold;
+	font-family: Myriad Pro;
+	font-size: 40px;
+	padding: 10px;
+}
+#main_co{
+	background-color: white;
+	position: absolute;
+	width: 60%;
+	top: 30%;
+	left:20%;
+	-moz-opacity:0.5;
+	filter:Alpha(opacity=50);
+	opacity:0.8; 
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+	color:#5e5e5e
+}
+#main_co p{
+	text-align: center;
+}
+#main_co span{
+	display: inline;
+}
+.authHome {
+	color:#00aeef;
+}
+
+#tplRgt {
+	position: absolute;
+	width:50px;
+	right:0px;
+	bottom:50px;
+	overflow: hidden;
+	text-align: center;
+}
+#linkSp{
+	text-decoration: none;
+	margin: 0px;
+}
+#linkSp img {
+	border-width:0pt;
+	vertical-align: middle;
+}
+#main_nav{
+	font-size: 18px;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	text-align: right;
+	padding:5px;
+	background-color: white;
+	-moz-opacity:0.5;
+	filter:Alpha(opacity=50);
+	opacity:0.8; 
+}
+#main_nav a{
+	display: block;
+	text-decoration: none;
+	
+}
+a:first-letter {
+	
+}
+
+#main_nav a:hover {
+	-moz-opacity:0.8;
+	/* DANGER : ne pas mettre "filter:Alpha(opacity...)" */
+	/* provoque un crash si associé a un élément hover pour IE6 et IE7 */
+	opacity:0.8;
+}
+
+#main_nav a.startBtn{
+	padding-right: 40px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	color: #00aeef;
+	line-height:26px;
+	background: url(../img/btn/next.png) no-repeat right;
+	font-size:15px
+}
+
+#tplBtm {
+	height:28px;
+	color: white;
+	text-align: right;
+}
+
+#tplBtmIn {
+	background: url(../img/struct/ours.png) no-repeat center left;
+	position: absolute;
+	display: block;
+	right: 3px;
+	left: 3px;
+	bottom:3px;
+	height:30px;
+}
+
+#gotoLastLocation {
+	margin-top: 10px;
+}
+#gotoLastLocation a{
+	padding-right: 40px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	color: #406121;
+	line-height:26px;
+	background: url(../img/btn/allerPage.gif) no-repeat right;
+	font-size:15px
+}
+#resetStorageData {
+	margin-top: 10px;
+}
+#resetStorageData a{
+	padding-right: 40px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	color: #406121;
+	line-height:26px;
+	background: url(../img/btn/effacer.gif) no-repeat right;
+	font-size:15px
+}
+
+/* === SMALL & TOUCH screens ================================================ */
+/* ipad */
+@media only screen and (max-device-width: 1024px){
+	body{
+		-webkit-text-size-adjust:none;
+	}
+}
+
+div.tplFra_small ul#accessibility{
+	display:none;
+}
+

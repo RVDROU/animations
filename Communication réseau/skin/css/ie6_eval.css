@@ -1,0 +1,49 @@
+html, body {
+	overflow: auto; 
+}
+#evalPlayerBar,
+#evalPlayerPrint{
+	position:absolute;
+	right: 18px
+}
+
+.question{
+	padding-bottom:20px;
+}
+
+.question, .score, .sol, .explain {
+	height:50px;
+}
+div.op_practUcQ_hint_co{
+	background: url(../img/quiz/practHint.png) no-repeat top left;
+	padding-left: 45px;
+}
+div.op_practUcQ_sol_co{
+	background: url(../img/quiz/practSol2.png) no-repeat top left;
+	padding-left: 45px;
+}
+
+/******************/
+/* Eval - results */
+/******************/
+.evalSol{
+	margin-top: 20px;
+}
+.evalSol_ti{
+	width: 670px;
+}
+.closeE{
+	width: 670px;
+}
+.SolQuestion{
+	background: url(../img/quiz/questionSolS.png) top left no-repeat;
+	width: 600px;
+}
+.SolQuestion .question
+{
+	margin-top: 0;
+	padding-bottom: 0px;
+}
+.evalSolEx{
+width: 600px;
+}
